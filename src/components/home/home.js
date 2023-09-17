@@ -56,7 +56,7 @@ export default function Album() {
               color="text.primary"
               gutterBottom
             >
-              A.T Gardening
+              A.T Landscaping
             </Typography>
             <Typography
               variant="h5"
