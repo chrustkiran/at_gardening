@@ -4,7 +4,9 @@ import Album from './components/home/home';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" style={{backgroundImage : `url(https://img1.picmix.com/output/stamp/normal/2/8/0/2/492082_cb542.gif)`,
+    backgroundBlendMode: 'darken'
+    }}>
       <Album></Album>
     </div>
   );

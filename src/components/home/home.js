@@ -29,7 +29,7 @@ const defaultTheme = createTheme();
 
 export default function Album() {
   return (
-    <ThemeProvider theme={defaultTheme}>
+    <ThemeProvider theme={defaultTheme}   >
       <CssBaseline />
       {/* <AppBar position="relative">
         <Toolbar>
@@ -37,16 +37,15 @@ export default function Album() {
         </Toolbar>
       </AppBar> */}
       <main 
-      // style={{backgroundImage : `url(https://i.pinimg.com/originals/3b/1b/3b/3b1b3bd2b9f1b4663049a88fe8f6bf29.gif)`,
-      //  backgroundRepeat:'round'}}
+     
    >
 
         <Box
-          sx={{
-            bgcolor: "background.paper",
-            pt: 8,
-            pb: 6,
-          }}
+          // sx={{
+          //   bgcolor: "background.paper",
+          //   pt: 8,
+          //   pb: 6,
+          // }}
         >
           <Container maxWidth="sm">
             <Typography

@@ -22,7 +22,7 @@ export default function ServiceCard() {
     {
       image:
         "https://www.ugaoo.com/cdn/shop/articles/shutterstock_319814978.jpg?v=1661851104",
-      heading: "Soild Preparation",
+      heading: "Soil Preparation",
     },
     {
       image:
