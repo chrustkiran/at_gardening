@@ -44,7 +44,7 @@ export default function Album() {
           // sx={{
           //   bgcolor: "background.paper",
           //   pt: 8,
-          //   pb: 6,
+          //   pb: 6
           // }}
         >
           <Container maxWidth="sm">
@@ -52,28 +52,35 @@ export default function Album() {
               component="h1"
               variant="h2"
               align="center"
-              color="text.primary"
+              color="white"
               gutterBottom
+              paddingTop={18}
+              fontFamily={"fantasy"}
             >
               A.T Landscaping
             </Typography>
+            
             <Typography
               variant="h5"
               align="justify"
-              color="text.secondary"
+              color="text.primary"
               paragraph
+              paddingTop={10}
             >
-              <Typography variant="h4" align="center">
+              <Typography variant="h4" align="center" color={"whitesmoke"}>
                 {" "}
                 🌿 Transform Your Garden! 🌼
               </Typography>
               <br></br>
+              <Typography color = "whitesmoke" variant="h5">
               Are you dreaming of a vibrant, thriving garden that's the envy of
               your neighborhood? Look no further! Our team of passionate
               gardening experts is here to bring your garden dreams to life.
+              </Typography>
+              
             </Typography>
 
-            {/* <Box style={{display: 'flex', alignItems:'center'}}>
+            {/* <Box style={{display: 'flex', alignItems:center'}}>
               <img 
                 src= {`https://img1.picmix.com/output/stamp/normal/4/2/6/8/1508624_ff7be.gif`}
               ></img>
@@ -112,16 +119,17 @@ export default function Album() {
             
           </Container>
         </Box>
-
+        <br></br>
         <ServiceCard></ServiceCard>
-        <Typography>
+        <Typography color={"white"}>
         Let's make your garden the pride of the neighborhood. Call us to schedule a free consultation. 
         Discover the joy of a lush, thriving garden right at your doorstep.
         </Typography>
       </main>
       <br></br>
+     
+      <Box sx={{ bgcolor: "background.paper", p:6 }} component="footer">
       <Typography> ABN : 84 607 845 408</Typography>
-      <Box sx={{ bgcolor: "background.paper", p: 6 }} component="footer">
         <Copyright />
       </Box>
     </ThemeProvider>
