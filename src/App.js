@@ -5,25 +5,26 @@ import Box from "@mui/material/Box";
 import React from "react";
 
 class App extends React.Component {
+  intervalIds = [];
   intervalId = 0;
   constructor() {
     super();
-    this.state = { op: 0.85};
+    this.state = { op: 1};
   }
 
   componentDidMount() {
-    // this.intervalId = setInterval(() => {
-    //   if (this.state.op > 0.8) {
-    //     this.setState({ op: this.state.op - 0.1 });
-    //   } 
-    //   console.log("hitting..." + this.intervalId);
-    // }, 100);
+    this.intervalId = setInterval(() => {
+        if(this.state.op > 0.8) this.setState({ op: this.state.op - 0.01 });
+    }, 100);
+    this.intervalIds.push(this.intervalId);
+    
   }
 
-  vis() {
+  stopInterval() {
     if (this.state.op <= 0.8) {
-      clearInterval(this.intervalId);
-      console.log("clearInterval " + this.intervalId)
+      this.intervalIds.forEach(element => {
+        clearInterval(element);
+      });
     }
   }
 
@@ -52,7 +53,7 @@ class App extends React.Component {
           backgroundRepeat: "space",
         }}
       >
-        {this.vis()}
+        {this.stopInterval()}
         {this.show()}
       </div>
     );
